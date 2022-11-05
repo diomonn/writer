@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --black: rgb(0, 0, 0, .3);
+}
+
+@font-face {
+    font-family: 'AlibabaPuHuiTi';
+    src: url(../files/ALIBABASANS-LIGHT.TTF);
+}
+
+@font-face {
+    font-family: 'SourceHanSansSC';
+    src: url(../files/SourceHanSansSC-Regular-2.ttf);
+}
+
+.Grid {
+    font-family: 'SourceHanSansSC';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.a {
+    display: flex;
+    justify-content: center;
+    background: rgb(0, 0, 0, .7);
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.b {
+    font-family: 'AlibabaPuHuiTi';
+    background: rgb(0, 0, 0, .7);
+    grid-column: 5/11;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.b a {
+    color: aliceblue;
+}
+
+.f input {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.footer {
+    grid-column: 1/3;
+    grid-row: 7/11;
+}
+
+.footer .box {
+    text-align: center;
+    color: aliceblue;
+    font-family: 'AlibabaPuHuiTi';
+    position: relative;
+    font-size: 1.5rem;
+    width: 60%;
+    height: 100%;
+    background: var(--black);
+}
+
+@media screen and (min-width: 357px) and (max-width: 1000px) {
+    .b {
+        grid-column: 3/11;
+        font-size: 1rem
+    }
+}
+
+@media screen and (min-width: 357px) and (max-width: 660px) {
+    .footer .box {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./html/css/article.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Grid ">
+        <div class="a"><img onclick="Router('index')" src="./html/images/rotundity.png" alt=""></div>
+        <div class="b">
+            <a href="article.html">article</a>
+            <a href="achievement.html">achievement</a>
+            <a href="hoppy.html">hoppy</a>
+            <a href="contact.html">contact</a>
+            <a href="plog.html">plog</a>
+        </div>
+        <div class="footer">
+            <div class="box">
+                Please support my novel
+            </div>
+        </div>
+        <div class="main">
+            <div class="box" onclick="Router('novel',0)">
+                The legendary man</div>
+            <div class="box" onclick="Router('novel',1)">
+                Beautiful world
+            </div>
+            <img src="./html/images/img1.jpg" alt="" onclick="Router('essay',4)">
+            <div class="box" onclick="Router('novel',2)">
+                About the writing of multiple articles in the article
+            </div>
+
+            <div class="box" onclick="Router('novel',3)"></div>
+            <div class="box" onclick="Router('novel',4)"></div>
+            <div class="box" onclick="Router('novel',5)"></div>
+        </div>
+
+    </div>
+    <script>
+        function Router(a, i) {
+            window.location.href = `${a}.html?${i}`
+        }
+    </script>
+</body>
+
+</html>

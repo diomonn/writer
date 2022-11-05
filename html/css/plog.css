@@ -1,0 +1,25 @@
+@import url(./index.css);
+.main {
+    grid-column: 2/10;
+    grid-row: 2/10;
+    background: var(--black);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main .box {
+    margin-left: .625rem;
+    width: 20%;
+    height: 35%;
+    background: #000;
+}
+
+@media screen and (min-width: 357px) and (max-width: 850px) {
+    .main .box {
+        margin-left: .625rem;
+        width: 35%;
+        height: 24%;
+        background: #000;
+    }
+}
